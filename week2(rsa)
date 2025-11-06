@@ -20,6 +20,7 @@ key = RSA.construct((n, e, d, p, q))
 fn = "private.pem"
 with open(fn, "wb") as f:
         f.write(key.exportKey())
-
+()
 pip install pycryptodome
 openssl pkeyutl -decrypt -in enc.txt -out dec.txt -inkey private_key.pem
+cat dec.txt
