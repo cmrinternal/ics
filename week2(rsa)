@@ -1,0 +1,9 @@
+mkdir rsa
+cd rsa
+ls
+ls
+cat pubkey.pem
+openssl rsa -pubin -inform PEM -text -noout < pubkey.pem
+touch exploit.py
+pip install pycryptodome
+openssl pkeyutl -decrypt -in enc.txt -out dec.txt -inkey private_key.pem
