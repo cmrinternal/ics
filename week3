@@ -1,0 +1,25 @@
+cd /var/www/html
+ls
+git clone https://github.com/digininja/DVWA.git
+sudo mv DVWA dvwa
+sudo chmod -R 777 dvwa/
+ls
+cd dvwa/config
+ls
+sudo cp config.inc.php.dist config.inc.php
+ls
+sudo nano config.inc.php
+cat config.inc.php(change adim and password)
+sudo service mysql start(enter password kali)
+sudo mysql -u root -p
+MariaDB>create databasse dvwa;
+        create user dvwa@localhost identified by 'password';
+        grant all dvwa.* admin @127.0.0.1
+        exit
+cd /etc
+ls
+cd php
+cd 8.4/apache2
+ls
+sudo service apache2 start
+http://localhost/DVWA
