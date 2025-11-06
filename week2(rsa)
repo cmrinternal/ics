@@ -4,6 +4,13 @@ ls
 ls
 cat pubkey.pem
 openssl rsa -pubin -inform PEM -text -noout < pubkey.pem
+Hexadecimal to decimal convertor binaryhexconverter.com
+e=65537
+factordb.com
+(optional)copy the code in exploit.py file
+from Crypto. Publickey import RSA
+from Crypto. Util. number import inverse import base 64
+phi_n=(p-1)*(q-1)
 touch exploit.py
 pip install pycryptodome
 openssl pkeyutl -decrypt -in enc.txt -out dec.txt -inkey private_key.pem
